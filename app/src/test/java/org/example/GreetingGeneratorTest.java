@@ -3,13 +3,19 @@ package org.example;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class GreetingGeneratorTest {
-  // This is just an example test file to demonstrate how everything works
-  // You should delete this file when you implement your own solution
-
+class PowerTest {
   @Test
-  void itSaysHello() {
-    GreetingGenerator generator = new GreetingGenerator();
-    assertEquals(generator.sayHello(), "Hello World!");
+  void smallCasesAgreeAcrossImplementations() {
+    int[] xs = {2, 3, 5};
+    int[] ns = {0, 1, 2, 3, 4, 5, 10};
+    for (int x : xs) {
+      for (int n : ns) {
+        long a = Power.naivePower(x, n);
+        long b = Power.unoptimizedDCPower(x, n);
+        long c = Power.optimizedDCPower(x, n);
+        assertEquals(a, b, "naive vs unoptimizedDC mismatch at x=" + x + ", n=" + n);
+        assertEquals(b, c, "unoptimizedDC vs optimizedDC mismatch at x=" + x + ", n=" + n);
+      }
+    }
   }
 }
