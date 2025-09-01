@@ -1,4 +1,7 @@
 # I've Got the Power! (Java)
+<img width="917" height="605" alt="image" src="https://github.com/user-attachments/assets/079e6325-70b9-4172-b342-25cc71c8b9ef" />
+<img width="913" height="589" alt="image" src="https://github.com/user-attachments/assets/9132434b-3f34-45e0-a2e0-026f56247238" />
+<img width="900" height="592" alt="image" src="https://github.com/user-attachments/assets/4f16f578-d7ab-4ef8-bfee-e952a4ab78fd" />
 
 You can find the instructions for this lab at [More Than Equations][more-than-equations]. Create a new repository on GitHub to house your code. Be sure to make the repository public so that I can view and grade it.
 
